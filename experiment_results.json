@@ -41,6 +41,30 @@
       "MAE": 113.6938,
       "RMSE": 635.8874,
       "R2": 0.826129
+    },
+    {
+      "label": "v6a LightGBM refined",
+      "MAE": 117.9711,
+      "RMSE": 636.5886,
+      "R2": 0.825746
+    },
+    {
+      "label": "v6b CatBoost",
+      "MAE": 119.9436,
+      "RMSE": 636.3052,
+      "R2": 0.825901
+    },
+    {
+      "label": "v6c XGBoost",
+      "MAE": 112.5013,
+      "RMSE": 635.2731,
+      "R2": 0.826465
+    },
+    {
+      "label": "v6d Ensemble (L=0.1 C=0.1 X=0.8)",
+      "MAE": 112.8164,
+      "RMSE": 635.3155,
+      "R2": 0.826442
     }
   ],
   "best_model": "XGBoost CV",
@@ -52,5 +76,12 @@
   "v5_best_mae": 112.9077,
   "v5_lgb_best_iter": 2123,
   "v5_xgb_best_iter": 953,
-  "v5_ensemble_lgb_weight": 0.3
+  "v5_ensemble_lgb_weight": 0.3,
+  "v6_best": "v6c XGBoost",
+  "v6_best_mae": 112.5013,
+  "v6_weights": {
+    "lgb": 0.1,
+    "cb": 0.1,
+    "xgb": 0.8
+  }
 }
