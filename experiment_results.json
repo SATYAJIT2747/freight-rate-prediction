@@ -23,11 +23,34 @@
       "MAE": 112.0229,
       "RMSE": 635.2683,
       "R2": 0.826468
+    },
+    {
+      "label": "v5a LightGBM log-target",
+      "MAE": 118.9812,
+      "RMSE": 636.9219,
+      "R2": 0.825563
+    },
+    {
+      "label": "v5b XGBoost log-target",
+      "MAE": 112.9077,
+      "RMSE": 635.7464,
+      "R2": 0.826206
+    },
+    {
+      "label": "v5c Ensemble (LGB=0.30)",
+      "MAE": 113.6938,
+      "RMSE": 635.8874,
+      "R2": 0.826129
     }
   ],
   "best_model": "XGBoost CV",
   "best_cv_mae": 112.0229,
   "lgb_best_iter": 1263,
   "xgb_best_iter": 787,
-  "ensemble_lgb_weight": 0.3
+  "ensemble_lgb_weight": 0.3,
+  "v5_best": "v5b XGBoost log-target",
+  "v5_best_mae": 112.9077,
+  "v5_lgb_best_iter": 2123,
+  "v5_xgb_best_iter": 953,
+  "v5_ensemble_lgb_weight": 0.3
 }
