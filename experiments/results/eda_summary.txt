@@ -1,0 +1,23 @@
+train rows 48,000  2025-01-01 .. 2025-10-31
+valid rows 12,000  2025-11-01 .. 2025-12-31
+[train] missing weight 300, missing market_index 374, negative weight 292, weight==47,500 cap 1204, duplicate ids 0
+[valid] missing weight 165, missing market_index 249, negative weight 145, weight==47,500 cap 301, duplicate ids 0
+RPM quantiles 0.1%/1%/50%/99%/99.9%: 0.44, 1.67, 2.15, 3.18, 10.07
+posted_rate range $57 .. $25,533
+validation loads on lanes never seen in training: 12.2%
+
+quote_signal regime by month (corr with lane median RPM; share of loads with posted_rate within 2% of distance*quote_signal)
+  Jan [train] corr=+0.69  exact-share=92%
+  Feb [train] corr=+0.72  exact-share=93%
+  Mar [train] corr=+0.73  exact-share=93%
+  Apr [train] corr=-0.60  exact-share=7%
+  May [train] corr=-0.56  exact-share=7%
+  Jun [train] corr=+0.67  exact-share=94%
+  Jul [train] corr=-0.59  exact-share=7%
+  Aug [train] corr=+0.02  exact-share=10%
+  Sep [train] corr=+0.76  exact-share=93%
+  Oct [train] corr=-0.59  exact-share=7%
+  Nov [valid] corr=-0.00  exact-share=n/a (no labels)
+  Dec [valid] corr=-0.01  exact-share=n/a (no labels)
+
+market_index vs lane-relative RPM: per-load corr +0.08, daily-mean corr +0.69

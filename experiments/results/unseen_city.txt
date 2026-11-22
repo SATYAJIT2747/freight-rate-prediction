@@ -1,0 +1,2 @@
+nearest-city priors: mean MAE $161.21 over 3 random 8-city holdouts
+equipment fallback: mean MAE $168.20 over 3 random 8-city holdouts

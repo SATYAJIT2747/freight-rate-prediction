@@ -1,0 +1,46 @@
+{
+  "best_iterations": {
+    "xgb": 415,
+    "lgb": 702,
+    "cat": 508
+  },
+  "october_holdout": {
+    "xgb": 102.48140446930455,
+    "lgb": 101.89872966139431,
+    "cat": 100.98980176776601,
+    "blend": 100.6938263408547,
+    "blend_rmse": 647.5807314006382
+  },
+  "features": [
+    "distance",
+    "log_distance",
+    "haversine_miles",
+    "circuity",
+    "pickup_lat",
+    "pickup_lon",
+    "delivery_lat",
+    "delivery_lon",
+    "weight",
+    "weight_missing",
+    "weight_negative",
+    "day_of_week",
+    "lane_rpm_prior",
+    "lane_count",
+    "pickup_rpm_prior",
+    "delivery_rpm_prior",
+    "equipment",
+    "pickup",
+    "delivery"
+  ],
+  "models": [
+    "xgb",
+    "lgb",
+    "cat"
+  ],
+  "seeds": [
+    42,
+    101,
+    2024
+  ],
+  "cv_experiment_name": "Blend: XGB + LGB + CatBoost, core features (FINAL)"
+}
